@@ -74,11 +74,11 @@
         layer_4 {
             display-name = "l4";
             bindings = <
-&none   &none  &none  &none  &none  &none  &none                                  &none  &none      &none           &none           &none            &none  &none
-&none   &none  &none  &none  &none  &none  &none                                  &none  &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_RIGHT  &none  &none
-&none   &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &mkp RCLK  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none  &none
-&none   &none  &none  &none  &none  &none                &none      &none                &none      &msc SCRL_DOWN  &mmv MOVE_DOWN  &msc SCRL_LEFT   &none  &none
-&trans  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none             &bl BL_INC      &bl BL_DEC      &none            &none  &none
+&none       &none  &none           &none           &none            &none      &none                                         &none  &none      &none           &none           &none            &none  &none
+&none       &none  &none           &mmv MOVE_UP    &none            &none      &none                                         &none  &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_RIGHT  &none  &none
+&kp ESCAPE  &none  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mkp RCLK  &none         &none  &none      &none  &none  &none  &mkp RCLK  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none  &none
+&none       &none  &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &none                           &none      &none                &none      &msc SCRL_DOWN  &mmv MOVE_DOWN  &msc SCRL_LEFT   &none  &none
+&trans      &none  &none           &kp C           &kp V                       &kp LEFT_GUI  &none  &none      &none  &none  &none             &bl BL_INC      &bl BL_DEC      &none            &none  &none
             >;
 
             label = "l4";
