@@ -44,7 +44,7 @@
         consolelog_macro: consolelog_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp GRAVE &kp DLLR &kp RBKT>;
+            bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp GRAVE &kp DLLR &kp LEFT_BRACE>;
             label = "CONSOLELOG_MACRO";
         };
     };
