@@ -160,7 +160,7 @@
         mostly-mouse {
             display-name = "l4";
             bindings = <
-&none       &kp N1  &kp N2          &kp N3          &kp N4           &kp N5     &none                                                                               &none      &kp N6     &kp N7          &kp N8          &kp N9           &kp N0  &none
+&none       &kp N1  &kp N2          &kp N3          &kp N4           &kp N5     &none                                                                               &mo 3      &kp N6     &kp N7          &kp N8          &kp N9           &kp N0  &none
 &kp TAB     &kp Q   &kp W           &mmv MOVE_UP    &kp R            &kp T      &none                                                                               &none      &kp Y      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_RIGHT  &none   &none
 &kp ESCAPE  &kp A   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mkp RCLK  &none         &kp LEFT_CONTROL  &kp LEFT_ALT      &kp RIGHT_ALT  &kp RIGHT_CONTROL  &none      &mkp RCLK  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &none
 &none       &kp Z   &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &kp B                                      &trans            &trans                                       &kp N      &msc SCRL_DOWN  &mmv MOVE_DOWN  &msc SCRL_LEFT   &none   &trans
