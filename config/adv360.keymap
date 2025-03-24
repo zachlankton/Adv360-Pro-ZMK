@@ -108,6 +108,13 @@
             bindings = <&kp LC(B) &kp D>;
             label = "TMUX_EXIT";
         };
+
+        open_newline: open_newline {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp END &kp ENTER>;
+            label = "OPEN_NEWLINE";
+        };
     };
 
     keymap {
@@ -138,11 +145,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3        &kp F4          &kp F5         &kp F6        &none                                              &none   &kp F7  &kp F8       &kp F9       &kp F10      &kp F11      &kp F12
-&trans  &trans  &kp LA(LEFT)  &kp UP_ARROW    &kp LA(RIGHT)  &tmux_new     &tmux_split_v                                      &none   &trans  &trans       &trans       &trans       &trans       &trans
-&trans  &trans  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT      &tmux_ctrl_b  &tmux_split_h  &trans  &trans      &trans  &trans  &none   &trans  &trans       &trans       &trans       &trans       &trans
-&trans  &trans  &kp DELETE    &kp HOME        &kp END        &tmux_exit                           &trans      &trans                  &trans  &trans       &trans       &trans       &trans       &trans
-&trans  &trans  &trans        &trans          &trans                       &trans         &trans  &trans      &trans  &trans  &trans          &tmux_win_0  &tmux_win_1  &tmux_win_2  &tmux_win_3  &trans
+&kp F1  &kp F2   &kp F3               &kp F4             &kp F5         &kp F6              &none                                              &none   &kp F7          &kp F8          &kp F9        &kp F10          &kp F11      &kp F12
+&trans  &trans   &kp LC(RIGHT_ARROW)  &kp END            &kp LC(LS(Z))  &tmux_new           &tmux_split_v                                      &none   &kp LC(C)       &kp LC(Z)       &kp INSERT    &open_newline    &kp LC(V)    &trans
+&trans  &kp END  &kp LEFT             &kp LC(X)          &kp RIGHT      &tmux_ctrl_b        &tmux_split_h  &trans  &trans      &trans  &trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans       &trans
+&trans  &trans   &kp DELETE           &kp HOME           &kp END        &kp LC(LEFT_ARROW)                         &trans      &trans                  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans       &trans
+&trans  &trans   &kp LC(DELETE)       &kp LC(BACKSPACE)  &trans                             &trans         &trans  &trans      &trans  &trans  &trans                  &tmux_win_0     &tmux_win_1   &tmux_win_2      &tmux_win_3  &trans
             >;
         };
 
